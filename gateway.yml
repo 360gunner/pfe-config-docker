@@ -19,10 +19,10 @@ security:
   - "*.bundle.*"
   oauth2:
     client:
-#      accessTokenUri: http://localhost:9999/elit/oauth/token
-#      userAuthorizationUri: http://localhost:9999/elit/oauth/authorize
-      accessTokenUri: http://authserver/elit/oauth/token
-      userAuthorizationUri: http://authserver/elit/oauth/authorize
+      accessTokenUri: http://localhost:9999/elit/oauth/token
+      userAuthorizationUri: http://localhost:9999/elit/oauth/authorize
+#      accessTokenUri: http://authserver/elit/oauth/token
+#      userAuthorizationUri: http://authserver/elit/oauth/authorize
       clientId: Kentache
       clientSecret: amira9696
     resource:
