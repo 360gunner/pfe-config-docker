@@ -8,7 +8,7 @@ security:
     password: password
 server:
   contextPath: /elit
-  port: 9999
+#  port: 9999
 spring:
   datasource:
 #    continue-on-error: true
