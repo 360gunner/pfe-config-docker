@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     port: 5672
     username: guest
     password: guest
@@ -11,7 +11,8 @@ spring:
     proxy-target-class: true
   application:
     name: gateway
-
+  zipkin:
+    base-url: http://zipkin:9411
 security:
   user:
     password: none
@@ -19,8 +20,8 @@ security:
   - "*.bundle.*"
   oauth2:
     client:
-      accessTokenUri: http://localhost:9999/elit/oauth/token
-      userAuthorizationUri: http://localhost:9999/elit/oauth/authorize
+      accessTokenUri: http://authserver:9999/elit/oauth/token
+      userAuthorizationUri: http://authserver:9999/elit/oauth/authorize
 #      accessTokenUri: http://authserver/elit/oauth/token
 #      userAuthorizationUri: http://authserver/elit/oauth/authorize
       clientId: Kentache
@@ -51,4 +52,4 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
