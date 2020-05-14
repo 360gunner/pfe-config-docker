@@ -22,7 +22,7 @@ spring:
     continue-on-error: true
     password: '1998'
     testWhileIdle: true
-    url: jdbc:postgresql://localhost:5432/demande2
+    url: jdbc:postgresql://pgadmin:5432/demande2
     username: 'postgres'
     validationQuery: SELECT 1
   jpa:
