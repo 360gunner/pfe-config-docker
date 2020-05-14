@@ -14,7 +14,7 @@ spring:
 #    continue-on-error: true
     password: '1998'
     testWhileIdle: true
-    url: jdbc:postgresql://localhost:5432/AuthServerPresentation
+    url: jdbc:postgresql://pgauth:5432/AuthServerPresentation
     username: 'postgres'
     validationQuery: SELECT 1
   jpa:
