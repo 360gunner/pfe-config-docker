@@ -21,7 +21,7 @@ security:
   oauth2:
     client:
       accessTokenUri: http://authserver:9999/elit/oauth/token
-      userAuthorizationUri: http://authserver:9999/elit/oauth/authorize
+      userAuthorizationUri: http://localhost:9999/elit/oauth/authorize
 #      accessTokenUri: http://authserver/elit/oauth/token
 #      userAuthorizationUri: http://authserver/elit/oauth/authorize
       clientId: Kentache
